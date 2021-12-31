@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div id='box'>
+        <h1>Login Authentication</h1>
+        <form action='Asset/Login.html' method="post" onsubmit="return startlog()">
+            <input id='username' type='text' placeholder='Username'/><br/>
+            <input id='password' type='password' placeholder='Password'/><br/>
+            <button type="submit" action='submit' value="Login" onclick='startlog()'> Login Start</button>
+            <p id='akses'></p>
+        </form>
+    </div>
+
+    <script>
+        function startlog(){
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+if(username=="amma21222ti"&& password=="ammarfarras")
+{
+    alert("login succesfully");
+    document.write("<p>Login Sukses</p>");
+}
+else
+{
+    alert("login failed");
+    return false;
+}
+        }
+    </script>
+</body>
+</html>

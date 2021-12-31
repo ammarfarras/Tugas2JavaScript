@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h1>IMAGE PICKER</h1>
+    <h2>Silahkan Pilih Logo Esport</h2>
+    <select name="logo esport" id="loges" onclick="gambarLoges()" onmouseout="imageConfirmation()">
+        <option selected disabled>Pilih</option>
+        <option value="evos">Evos Legends</option>
+        <option value="rrq">RRQ Hoshi</option>
+        <option value="ae">Alter Ego</option>
+        <option value="btr">Bigetron Alpha</option>
+        <option value="onic">Onic Esport</option>
+    </select>
+    <div>
+        <img src="#" alt="" width="500px" id="hasil">
+    </div>
+
+
+
+    <script>
+        const hs = document.getElementById("hasil")
+        const loges = document.getElementById("loges")
+
+        function gambarLoges(){
+            if (loges.value == "evos"){
+                return hs.src = "evos.png"
+            }
+            else if (loges.value == "rrq"){
+                return hs.src = "rrq.png"
+            }
+            else if (loges.value == "ae"){
+                return hs.src = "ae.png"
+            }
+            else if (loges.value == "btr"){
+                return hs.src = "btr.png"
+            }
+            else if (loges.value == "onic"){
+                return hs.src = "onic.png"
+            }
+        
+        }
+        function imageConfirmation() {
+            alert(hs.src)
+        }
+    </script>
+</body>
+</html>
